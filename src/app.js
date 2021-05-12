@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
       NodeJs: true,
       CircleCI: true,
       Heroku: true,
-      Tested: false,
+      Tested: true,
     },
     author: "Kevin Almeida",
   });
