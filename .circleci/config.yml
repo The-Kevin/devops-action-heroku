@@ -7,7 +7,7 @@ orbs:
 workflows:
   sample:
     jobs:
-      - node
+      - node: npm start
       - heroku/deploy-via-git:
           force: true
           requires:
