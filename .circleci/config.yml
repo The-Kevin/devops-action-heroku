@@ -7,11 +7,11 @@ orbs:
 workflows:
   sample:
     jobs:
-      - node/test
+      - node
       - heroku/deploy-via-git:
           force: true
           requires:
-            - node/test
+            - node
           filters:
             branches:
               only: develop
