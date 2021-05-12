@@ -1,14 +1,7 @@
 version: 2.1
-
 orbs:
-  node: circleci/node@4.1
-  heroku: circleci/heroku@1.2
-
+  heroku: circleci/heroku@0.0.10
 workflows:
-  sample:
+  heroku_deploy:
     jobs:
-      - heroku/deploy-via-git:
-          force: true
-          filters:
-            branches:
-              only: develop
+      - heroku/deploy-via-git
